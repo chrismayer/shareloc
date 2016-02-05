@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 
-    <title>Shareloc</title>
+    <title>Shareloc RLP</title>
   </head>
   <body>
     <div id="map">
@@ -44,28 +44,28 @@
         <img alt="www.meggsimim.de" src="./res/img/meggsimum.png">
     </a>
     <div id="show-ui">
-      <button id="list-btn" type="button" class="btn btn-s btn-primary" title="Show the menu to create your Shareloc link">
+      <button id="list-btn" type="button" class="btn btn-s btn-primary" title="Menü einblenden, um Shareloc Link zu generieren">
           <span class="glyphicon glyphicon-th-list"></span>
       </button>
     </div>
     <div id="sidebar">
-        <button type="button" class="btn btn-s close-x-btn close-ui" data-dismiss="sidebar" title="Close this menu">
+        <button type="button" class="btn btn-s close-x-btn close-ui" data-dismiss="sidebar" title="Menü schließen">
             <span class="glyphicon glyphicon-remove"></span>
         </button>
-        <button type="button" id="geolocation-btn" class="btn btn-s close-x-btn geolocation" title="Show your position on the map">
+        <button type="button" id="geolocation-btn" class="btn btn-s close-x-btn geolocation" title="Eigene Position auf der Karte anzeigen">
             <span class="glyphicon glyphicon-screenshot"></span>
         </button>
         <div class="panel panel-primary">
             <div class="panel-heading primary shareloc-header">
-              <span class="shareloc-title" style="margin-left: 45px;">Shareloc</span>
+              <span class="shareloc-title" style="margin-left: 45px;">Shareloc RLP</span>
             </div>
         </div>
 
         <!-- Tab definitions -->
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab">Layers <span class="glyphicon glyphicon-align-justify"></span></a></li>
+            <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab" localize>Karten <span class="glyphicon glyphicon-align-justify"></span></a></li>
             <li><a href="#marker" class="tool-tab" data-toggle="tab">Marker <span class="glyphicon glyphicon-map-marker"></a></li>
-            <li><a href="#code" class="tool-tab" data-toggle="tab">Share <span class="glyphicon glyphicon-share"></a></li>
+            <li><a href="#code" class="tool-tab" data-toggle="tab">Teilen <span class="glyphicon glyphicon-share"></a></li>
             <li><a href="#info" class="tool-tab" data-toggle="tab">Info <span class="glyphicon glyphicon-info-sign"></a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
@@ -75,10 +75,10 @@
             <div class="tab-pane" id="marker">
                <ul class="list-group">
                 <li class="list-group-item">
-                    Set a marker by clicking on the map.
+                    Setze Marker durck Click auf die Karte.
                     <p id="marker-x"></p>
                     <p id="marker-y"></p>
-                    <textarea id="popuptext" class="form-control" rows="3" placeholder="Add text for your marker here..."></textarea>
+                    <textarea id="popuptext" class="form-control" rows="3" placeholder="Tippe hier für Popup-Text..."></textarea>
                 </li>
               </ul>
             </div>
@@ -98,25 +98,22 @@
             <div class="tab-pane" id="info">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <span class="shareloc-title">Shareloc</span> is a free map API to share <a href="http://openlayers.org/">OpenLayers 3</a> web maps.
-                  Development and hosting are done by <a href="http://meggsimum.de/">meggsimum</a>.
-                  <br/>
-                  <br/>
-                  Defined by a link it is possible to share slippy maps showing your area of interest with one of
-                  the offered layers.
-                  Optionally you also can hint to a POI by a marker icon for example to show a
-                  meeting point or your favorite bar.
-                  <br/>
-                  Shareloc is Open Source (BSD License). The code can be found
-                  <a href="https://github.com/meggsimum/shareloc" target="_blank">here</a>.
+                  <span class="shareloc-title">Shareloc</span> ist eine offene
+                  und freie Karten-API, um OpenLayers 3-basierte Webkarten
+                  (sog. "Slippy Maps") einfach zu generieren und zu teilen.
+                  <a href="http://meggsimum.de/?page_id=272">Mehr Informationen...</a>
+                  <br><br>
+                  Idee, Entwicklung und Hosting durch <a href="http://meggsimum.de/">meggsimum</a>.
+                  Shareloc ist Open Source unter der BSD Lizenz veröffentlicht.
+                  Der Code steht
+                  <a href="https://github.com/meggsimum/shareloc" target="_blank">hier</a>
+                  zur Verfügung.
                   <h4>Credits</h4>
-                  Thanks to all map providers, who grant free access to their maps:
-                  <ul>
-                   <li><a href="http://www.openstreetmap.org/">OpenStreetMap</a></li>
-                   <li><a href="http://terrestris.de/">terrestris</a></li>
-                   <li><a href="http://www.mapquest.com/">MapQuest</a></li>
-                   <li><a href="http://opentopomap.org/">OpenTopoMap</a></li>
-                  </ul>
+                  Danke an alle, die freie Kartendienste bereitstellen.
+                  In dieser konkreten Anwendung die
+                  <a href="http://www.lvermgeo.rlp.de">Vermessungs- und Katasterverwaltung Rheinland-Pfalz</a>
+                  <br>
+                  Für alle hier gezeigten Karten gilt<pre>©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de</pre>
                 </li>
               </ul>
             </div>
