@@ -43,6 +43,9 @@
         title="Shareloc by meggsimum - WebGIS and more" target="_blank">
         <img alt="www.meggsimim.de" src="./res/img/meggsimum.png">
     </a>
+    <button type="button" id="info-btn" class="btn btn-s btn-primary" title="Info and credits">
+        <span class="glyphicon glyphicon-info-sign"></span>
+    </button>
     <div id="show-ui">
       <button id="list-btn" type="button" class="btn btn-s btn-primary" title="Menü einblenden, um Shareloc Link zu generieren">
           <span class="glyphicon glyphicon-th-list"></span>
@@ -66,7 +69,6 @@
             <li class="active"><a href="#layers" class="tool-tab" data-toggle="tab" localize>Karten <span class="glyphicon glyphicon-align-justify"></span></a></li>
             <li><a href="#marker" class="tool-tab" data-toggle="tab">Marker <span class="glyphicon glyphicon-map-marker"></a></li>
             <li><a href="#code" class="tool-tab" data-toggle="tab">Teilen <span class="glyphicon glyphicon-share"></a></li>
-            <li><a href="#info" class="tool-tab" data-toggle="tab">Info <span class="glyphicon glyphicon-info-sign"></a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="layers">
@@ -94,31 +96,73 @@
                 <li id="embed-iframe" class="list-group-item"></li>
               </ul>
             </div>
-
-            <div class="tab-pane" id="info">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <span class="shareloc-title">Shareloc</span> ist eine offene
-                  und freie Karten-API, um OpenLayers 3-basierte Webkarten
-                  (sog. "Slippy Maps") einfach zu generieren und zu teilen.
-                  <a href="http://meggsimum.de/?page_id=272">Mehr Informationen...</a>
-                  <br><br>
-                  Idee, Entwicklung und Hosting durch <a href="http://meggsimum.de/">meggsimum</a>.
-                  Shareloc ist Open Source unter der BSD Lizenz veröffentlicht.
-                  Der Code steht
-                  <a href="https://github.com/meggsimum/shareloc" target="_blank">hier</a>
-                  zur Verfügung.
-                  <h4>Credits</h4>
-                  Danke an alle, die freie Kartendienste bereitstellen.
-                  In dieser konkreten Anwendung die
-                  <a href="http://www.lvermgeo.rlp.de">Vermessungs- und Katasterverwaltung Rheinland-Pfalz</a>
-                  <br>
-                  Für alle hier gezeigten Karten gilt<pre>©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de</pre>
-                </li>
-              </ul>
-            </div>
-
         </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><span class="shareloc-title">Shareloc RLP</span> - OpenLayers Karten für Rheinland-Pfalz</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Info</h4>
+            Shareloc RLP stellt eine Webkarten-API mit Kartendiensten des
+            Landes Rheinland-Pfalz zur Verfügung und ist mit der Software
+            Shareloc realisiert.
+            <br/>
+            Shareloc ist eine Software, die eine einfach zu nutzende Karten-API
+            bereitstellt, um OpenLayers 3 basierte Webkarten zu erstellen und zu
+            teilen - ohne programmieren zu müssen!
+            <br/>
+            <br/>
+            Mit wenigen Klicks können Sie sich ihre eigene Webkarte mit einem
+            der angebotenen Kartenthemen erstellen.
+            Weiterhin können Sie einen speziellen Punkt in der Karte, z.B. Ihr
+            Firmenstandort oder einen Treffpunkt mit einem Markersymbol
+            hervorheben.<br/>
+            Shareloc stellt Ihnen einen einfachen Link zu Ihrer individuellen
+            Webkarte bereit, so dass Sie dies ganz einfach teilen können, z.B.
+            per EMail. Weiterhin stellt Shareloc auch HTML-Code bereit, den Sie
+            nutzen können, um Ihre Webkarte in Ihre eigen Webkarte einzubetten.
+            <br/>
+            <br/>
+            Sie möchten Ihre eigene Shareloc-Instanz mit Ihren eigenen
+            Kartendiensten? So dass Ihre Dienste schnell in Webkarten einsetzbar
+            sind, beispielweise für Ihre Mitarbeiter oder Kunden?
+            Kein Problem! Klicken Sie
+            <a href="https://github.com/meggsimum/shareloc#build-and-deploy-your-own-shareloc-instance">hier</a>
+             für weitere Informationen.
+            <br/>
+            <br/>
+            Shareloc wird entwickelt und bereitgestellt von: <br/><a href="http://meggsimum.de/"><img src="res/img/logo-meggsimum.png" alt="meggsimum logo" /></a>.
+            <br/>
+            <br/>
+            und ist Open Source (<a href="https://github.com/meggsimum/shareloc/blob/master/LICENSE">BSD Lizenz</a>).
+            Der Code ist
+            <a href="https://github.com/meggsimum/shareloc" target="_blank">hier</a>.
+            verfügbar.
+            <h4>Credits</h4>
+            Vielen Dank an die Entwickler der großartigen Mapping-Bibliothek
+            <a href="http://openlayers.org/">OpenLayers 3</a>.
+            <br>
+            <br>
+            Danke an die
+            <a href="http://www.lvermgeo.rlp.de">Vermessungs- und Katasterverwaltung Rheinland-Pfalz</a>,
+            die Ihre hervorragenden Kartendienste im Zuge der Open Data
+            Initiative frei zur Verfügung stellt
+            <br>
+            Für alle hier genutzten Kartendienste gilt:
+            <pre>© GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0,
+http://www.lvermgeo.rlp.de</pre>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div style="display: none;">
