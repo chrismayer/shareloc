@@ -13,7 +13,7 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/uek250.fcgi",
         "layer": "rp_uek250",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.dtk100": {
         "title": "DTK 100",
@@ -21,7 +21,7 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/dtk100.fcgi?",
         "layer": "rp_dtk100",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.dtk50": {
         "title": "DTK 50",
@@ -29,7 +29,7 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/dtk50.fcgi?",
         "layer": "rp_dtk50",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.dtk25": {
         "title": "DTK 25",
@@ -37,7 +37,7 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/dtk25.fcgi?",
         "layer": "rp_dtk25",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.dop40": {
         "title": "DOP 40",
@@ -45,7 +45,7 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/dop_basis.fcgi?",
         "layer": "rp_dop",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.webatlasrp": {
         "title": "WebAtlas RP",
@@ -53,6 +53,6 @@
         "type": "TileWMS",
         "url": "https://gisserv.service24.rlp.de/gisserver/services/RP/RP/MapServer/WmsServer?",
         "layer": "0",
-        "attribution": "©GeoBasis-DE / LVermGeoRP 2016, dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     }
 }
