@@ -7,12 +7,12 @@
         "layer": "rp_uekrlp",
         "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
-    "rlp.uek250": {
-        "title": "Übersichtskarte 250",
-        "desc": "Übersichtskarte Rheinland-Pfalz 1:250 000",
+    "rlp.webatlasrp": {
+        "title": "WebAtlas RP",
+        "desc": "WebAtlas Rheinland-Pfalz ",
         "type": "TileWMS",
-        "url": "http://geo4.service24.rlp.de/wms/uek250.fcgi",
-        "layer": "rp_uek250",
+        "url": "https://maps.service24.rlp.de/gisserver/services/RP/RP_ETRS/MapServer/WmsServer?",
+        "layer": "0",
         "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
     "rlp.dtk100": {
@@ -45,14 +45,6 @@
         "type": "TileWMS",
         "url": "http://geo4.service24.rlp.de/wms/dop_basis.fcgi?",
         "layer": "rp_dop",
-        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
-    },
-    "rlp.webatlasrp": {
-        "title": "WebAtlas RP",
-        "desc": "WebAtlas Rheinland-Pfalz ",
-        "type": "TileWMS",
-        "url": "https://gisserv.service24.rlp.de/gisserver/services/RP/RP/MapServer/WmsServer?",
-        "layer": "0",
         "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     }
 }
