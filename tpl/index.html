@@ -192,7 +192,13 @@
           hashObj = pl.getHashObject();
           params = hashObj;
       } else {
-          params = {};
+          // set default params for RLP
+          params = {
+              X: 7.9486083984375,
+              Y: 49.79544988802772,
+              bgLayer: "rlp.uek",
+              zoom: 8
+          };
       }
 
       var api = new Shareloc.MapApi();
