@@ -15,6 +15,14 @@
         "layer": "0",
         "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
     },
+    "rlp.webatlasrp_g": {
+        "title": "WebAtlas RP Graustufen",
+        "desc": "WebAtlas Rheinland-Pfalz in Graustufen",
+        "type": "TileWMS",
+        "url": "https://maps.service24.rlp.de/gisserver/services/RP/RP_ETRS_Gt/MapServer/WmsServer?",
+        "layer": "0",
+        "attribution": "GeoBasis-DE / LVermGeoRP 2016, <br>dl-de/by-2-0, http://www.lvermgeo.rlp.de "
+    },
     "rlp.dtk100": {
         "title": "DTK 100",
         "desc": "Digitale Topographische Karte Rheinland-Pfalz 1:100.000",
