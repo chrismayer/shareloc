@@ -1,11 +1,13 @@
-# ![](http://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png) Shareloc #
+# ![](https://apps.meggsimum.de/shareloc/res/img/shareloc-logo-mini.png) Shareloc #
 
 The free and open map API to create and share web maps based on
-[OpenLayers 3](http://openlayers.org).
+[OpenLayers](https://openlayers.org).
 
-Watch the online demo at http://apps.meggsimum.de/shareloc/
+[![license: 3-Clause BSD](https://img.shields.io/badge/license-3--Clause%20BSD-brightgreen.svg)](https://github.com/meggsimum/shareloc/blob/master/LICENSE)
 
-![ScreenShot](https://cloud.githubusercontent.com/assets/1185547/13081828/8289f00a-d4ce-11e5-98c0-a1d08be49cb0.PNG)
+Watch the online demo at https://apps.meggsimum.de/shareloc/
+
+![ScreenShot](https://user-images.githubusercontent.com/1185547/31016859-c1c22290-a526-11e7-8996-9257ec8477ed.png)
 
 At the moment there are a few free map layers based on open data included in the
 online demo. But it is easily possible to include your own layers (e. g. WMS) in
@@ -13,8 +15,8 @@ your Shareloc instance (see section [Build and deploy your own Shareloc instance
 
 ### Create maps without coding via web application ###
 
-With Shareloc it is possible to create your OpenLayers 3 web map without any
-coding. With the [Shareloc web application](http://apps.meggsimum.de/shareloc/) you can
+With Shareloc it is possible to create your OpenLayers web map without any
+coding. With the [Shareloc web application](https://apps.meggsimum.de/shareloc/) you can
   - configure your map view
   - add a marker to point at a special place and
   - optionally add a text in a bubble to your marker.
@@ -23,7 +25,7 @@ Afterwards you can share your map by a simple link or embed the map in your own 
 
 ### Use Shareloc JavaScript API ###
 
-Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers 3
+Shareloc offers an easy-to-use JavaScript API to create your own OpenLayers
 maps. Therefore you just have to include the Shareloc JavaScript lib into your
 HTML page. Now with a few lines of code it is possible to create a customized
 OpenLayers map.
@@ -44,7 +46,7 @@ var params = {
 var olMap = api.map(params);
 
 ```
-Check out the [API docs](http://meggsimum.github.io/shareloc/docs/) to see all
+Check out the [API docs](https://meggsimum.github.io/shareloc/docs/) to see all
 possibilities Shareloc offers.
 
 ### Build and deploy your own Shareloc instance ###
@@ -81,10 +83,10 @@ Any kind of contribution is warmly welcome:
 Thanks to all map providers, who grant free access to their maps, which are used
 in the online demo:
 
-* [OpenStreetMap](http://www.openstreetmap.org/)
-* [terrestris](http://terrestris.de/)
-* [MapQuest](http://www.mapquest.com/)
-* [OpenTopoMap](http://opentopomap.org/)
+* [OpenStreetMap](https://www.openstreetmap.org/)
+* [Bundesamt für Kartographie und Geodäsie](http://www.bkg.bund.de/)
+* [terrestris](https://terrestris.de/)
+* [OpenTopoMap](https://opentopomap.org/)
 
 
 ### Who do I talk to? ###

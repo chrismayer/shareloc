@@ -28,6 +28,7 @@ module.exports = function(grunt) {
       cssmain: {
         src: ['node_modules/openlayers/dist/ol.css',
               'node_modules/bootstrap/dist/css/bootstrap.min.css',
+              'res/css/bootstrap-override.css',
               'res/css/api-creator.css'],
         dest: 'build/res/css/<%= pkg.name %>-creator.css'
       },
@@ -44,7 +45,8 @@ module.exports = function(grunt) {
       cssshare: {
         src: ['node_modules/openlayers/dist/ol.css',
               'node_modules/bootstrap/dist/css/bootstrap.min.css',
-              'res/css/share.css'],
+              'res/css/share.css'
+        ],
         dest: 'build/res/css/<%= pkg.name %>.css'
       }
     },
@@ -70,6 +72,25 @@ module.exports = function(grunt) {
             'res/img/*.png'
           ],
           dest: 'build/res/img/'
+        }]
+      },
+      favIcon: {
+        files: [{
+          flatten: true,
+          expand: true,
+          src: [
+            'res/favicon/android-chrome-192x192.png',
+            'res/favicon/android-chrome-512x512.png',
+            'res/favicon/apple-touch-icon.png',
+            'res/favicon/browserconfig.xml',
+            'res/favicon/favicon-16x16.png',
+            'res/favicon/favicon-32x32.png',
+            'res/favicon/favicon.png',
+            'res/favicon/manifest.json',
+            'res/favicon/mstile-150x150.png',
+            'res/favicon/safari-pinned-tab.svg'
+          ],
+          dest: 'build/'
         }]
       },
       conf: {
@@ -136,6 +157,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'preprocess:dev', 'connect:server']);
-  grunt.registerTask('build', ['jshint', 'preprocess:dist', 'concat', 'uglify', 'copy:img', 'copy:conf']);
+  grunt.registerTask('build', ['jshint', 'preprocess:dist', 'concat', 'uglify', 'copy:img', 'copy:favIcon', 'copy:conf']);
 
 };

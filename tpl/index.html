@@ -2,7 +2,7 @@
 /*
  * Shareloc - the free and open map API
  *
- * Copyright (c) 2015-2016 meggsimum, Christian Mayer (http://www.meggsimum.de)
+ * Copyright (c) 2015-present meggsimum, Christian Mayer (https://www.meggsimum.de)
  * Published under the BSD license.
  * See https://github.com/meggsimum/shareloc/blob/master/LICENSE for the full
  * text of the license.
@@ -14,6 +14,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#980606">
+    <meta name="description" content="Shareloc - Free and open map API based on OpenLayers">
+    <meta name="keywords" content="Shareloc, maps, web maps, free, OpenLayers, share, POI">
+
+    <!-- x-platform favicons -->
+    <link rel="icon" type="image/png" href="./shareloc-logo-mini.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#980606">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fjalla One">
 
@@ -21,6 +32,7 @@
     <link rel="stylesheet" href="./node_modules/openlayers/dist/ol.css" type="text/css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./res/css/api-creator.css">
+    <link rel="stylesheet" href="./res/css/bootstrap-override.css">
 
     <script src="./node_modules/openlayers/dist/ol.js" type="text/javascript"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -29,10 +41,14 @@
     <!-- @endif -->
 
     <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
     <link rel="stylesheet" href="./res/css/Shareloc-creator.css">
     <!-- @endif -->
 
+    <!-- @if NODE_ENV='develop' -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="./res/css/bootstrap-override.css">
+    <!-- @endif -->
 
     <title>Shareloc RLP</title>
   </head>
